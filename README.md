@@ -1,4 +1,4 @@
-# Tahsan Farhad Ovi — Portfolio
+# Tahsan Farhad Ovi - Portfolio
 
 A modern, responsive developer portfolio built to showcase my projects, technical skills, experience, and journey as a Computer Science & Engineering student.
 
