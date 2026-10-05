@@ -2,7 +2,7 @@
 
 A modern, responsive developer portfolio built to showcase my projects, technical skills, experience, and journey as a Computer Science & Engineering student.
 
-🌐 **Live Portfolio:** [My Portfolio](https://tahsanfarhad-portfolio.netlify.app/)]
+🌐 **Live Portfolio:** [My Portfolio](https://tahsanfarhad-portfolio.netlify.app/)
 
 ## About
 
