@@ -1,39 +1,92 @@
 # Tahsan Farhad Ovi — Portfolio
 
-Premium dark developer portfolio built with React, Vite, Tailwind CSS, Framer Motion and Lucide React.
+A modern, responsive developer portfolio built to showcase my projects, technical skills, experience, and journey as a Computer Science & Engineering student.
 
-## Run it
+🌐 **Live Portfolio:** [My Portfolio](https://tahsanfarhad-portfolio.netlify.app/)]
+
+## About
+
+I'm Tahsan Farhad Ovi, a CSE student at **Shahjalal University of Science and Technology (SUST)** with a strong interest in software engineering, full-stack development, backend engineering, and AI-powered applications.
+
+This portfolio highlights my work, projects, technologies I use, and the things I'm currently learning.
+
+## Tech Stack
+
+* **Frontend:** React, Vite, Tailwind CSS
+* **Backend:** FastAPI, REST APIs
+* **Programming:** C++, Python, JavaScript
+* **Database:** PostgreSQL, Firebase
+* **AI:** Gemini API, AI-powered applications
+* **Tools:** Git, GitHub, Docker
+
+## Featured Projects
+
+### Hishabi
+
+A personal finance and mess management web application designed for students and everyday users.
+
+**Tech:** Flutter, Firebase, Gemini API
+
+### Courier Management System
+
+A full-stack courier management system with user authentication, shipment management, and REST API integration.
+
+**Tech:** React, FastAPI, PostgreSQL
+
+## Features
+
+* Responsive design
+* Modern dark-themed UI
+* Smooth animations
+* Project showcase
+* Skills and experience sections
+* GitHub activity integration
+* Contact section
+* Mobile-friendly layout
+
+## Run Locally
 
 ```bash
+git clone https://github.com/tahsan410/tahsan-portfolio.git
+cd tahsan-portfolio
 npm install
-npm run dev      # http://localhost:5173
-npm run build    # production build in dist/
-npm run preview  # preview the production build
+npm run dev
 ```
 
-Requires Node 18+.
+The development server will start at:
 
-## Things to add before publishing
+```text
+http://localhost:5173
+```
 
-| What | Where |
-| --- | --- |
-| Your real resume | Replace `public/resume.pdf` (currently a placeholder page) |
-| Project screenshots | `public/images/hishabi.png` and `public/images/courier.png` (1280×800 works well). Until they exist, a neutral preview is shown instead. |
-| Hishabi GitHub repo | `src/data/projects.js` → set `github` for the `hishabi` entry (no public repo was found on the profile) |
-| Dates | `src/data/experience.js` and `src/data/education.js` → fill in `period` (hidden while empty) |
-| Open Graph image URL | `index.html` → make `og:image` an absolute URL after deploying |
+## Build for Production
 
-## Editing content
+```bash
+npm run build
+npm run preview
+```
 
-Everything lives in `src/data/`:
+## Deployment
 
-- `site.js` — name, contact details, links, navigation
-- `projects.js` — add a project by appending an object (use `group: 'backend'` + `variant: 'compact'` for Backend & API cards)
-- `skills.js`, `experience.js`, `education.js`, `achievements.js`
+The portfolio is deployed using **Netlify**.
 
-## Notes
+Build command:
 
-- The contact form opens the visitor's email app (`mailto:`). There is no backend.
-- The GitHub section reads public data from the GitHub API and falls back to plain links if the request fails. Nothing is hard-coded or invented.
-- The portrait is `public/images/ovi.jpg`.
-- Hosting: any static host works (Firebase Hosting: set `"public": "dist"`; Netlify / Vercel: build command `npm run build`, output `dist`).
+```text
+npm run build
+```
+
+Output directory:
+
+```text
+dist
+```
+
+## Connect With Me
+
+* **GitHub:** https://github.com/tahsan410
+* **LinkedIn:** https://www.linkedin.com/in/tahsan-farhad-819398382
+
+---
+
+⭐ If you find this portfolio interesting, feel free to explore the projects and connect with me.
