@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-ink-950 font-sans text-slate-300 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight text-white;
+  }
+
+  ::selection {
+    background: rgba(99, 102, 241, 0.35);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme('colors.accent.400');
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply border border-white/[0.08] bg-white/[0.03] backdrop-blur-md;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-300 via-accent-400 to-violet2-400 bg-clip-text text-transparent;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse at 50% 25%, black 15%, transparent 72%);
+    mask-image: radial-gradient(ellipse at 50% 25%, black 15%, transparent 72%);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-accent-500 to-violet2-500 px-5 py-3 text-sm font-medium text-white shadow-glow transition duration-200 hover:-translate-y-0.5 hover:brightness-110 active:translate-y-0 active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-white/15 bg-white/[0.03] px-5 py-3 text-sm font-medium text-slate-100 transition duration-200 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/[0.07] active:translate-y-0 active:scale-[0.98];
+  }
+
+  .chip {
+    @apply rounded border border-white/10 bg-white/[0.04] px-2.5 py-1 font-mono text-[11px] text-slate-300;
+  }
+
+  .section-pad {
+    @apply py-24 sm:py-28;
+  }
+
+  .container-x {
+    @apply mx-auto max-w-6xl px-5 sm:px-8;
+  }
+}
