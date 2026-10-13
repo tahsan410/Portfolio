@@ -85,6 +85,31 @@ export const projects = [
     github: 'https://github.com/tahsan410/courier-management-system',
     image: '/images/courier.png',
   },
+    {
+    id: 'choco-haat',
+    group: 'main',
+    variant: 'secondary',
+    title: 'Choco Haat',
+    description:
+      'An online chocolate shop with a full admin dashboard, built for the Bangladesh market with bKash and Nagad payment support.',
+    problem:
+      'Gives a small shop a complete storefront plus an admin panel to run orders, stock and deliveries in one place.',
+    features: [
+      'Shop with search, category filter and sorting',
+      'Cart and checkout with validation',
+      'Order tracking by Order ID and phone number',
+      'Admin dashboard with sales analytics',
+      'Order, product, stock, coupon and delivery management',
+      'CSV export and Google Sheets sync',
+      'bKash and Nagad payment verification',
+      'Server-side price and stock checks',
+    ],
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Netlify Functions', 'Google Sheets API'],
+    categories: ['Featured', 'Frontend', 'Backend'],
+    live: 'https://chocohaat.netlify.app/',
+    github: 'https://github.com/tahsan410/choco-haat',
+    image: '/images/choco-haat.png',
+  },
   {
     id: 'expense-tracker-api',
     group: 'backend',
